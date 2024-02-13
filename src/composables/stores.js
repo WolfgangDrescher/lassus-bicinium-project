@@ -11,7 +11,7 @@ function createDefaultBiciniumFilterOptions() {
         searchText: '',
         mode: [],
         finalis: [],
-        transposition: '',
+        transposition: null,
     };
 };
 

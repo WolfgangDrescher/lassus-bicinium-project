@@ -30,14 +30,15 @@ const { searchText, mode, finalis, transposition } = storeToRefs(biciniumFilter)
                     v-model="mode"
                     multiple
                     class="w-full"
+                    value-attribute="id"
                     :options="[
-                        'dorian',
-                        'phrygian',
-                        'lydian',
-                        'mixolydian',
-                        'aeolian',
-                        'ionian',
-                        'locrian',
+                        { id: 'dorian', label: 'Dorisch' },
+                        { id: 'phrygian', label: 'Phrygisch' },
+                        { id: 'lydian', label: 'Lydisch' },
+                        { id: 'mixolydian', label: 'Mixolydisch' },
+                        { id: 'aeolian', label: 'Æolisch' },
+                        { id: 'ionian', label: 'Ionisch' },
+                        { id: 'locrian', label: 'Lokrisch' },
                     ]"
                 />
             </UFormGroup>
@@ -61,10 +62,11 @@ const { searchText, mode, finalis, transposition } = storeToRefs(biciniumFilter)
                 <USelectMenu
                     v-model="transposition"
                     class="w-full"
+                    value-attribute="id"
                     :options="[
-                        '',
-                        'cantus_durus',
-                        'cantus_mollis',
+                        { id: null, label: '—' },
+                        { id: 'cantus_durus', label: 'Cantus durus' },
+                        { id: 'cantus_mollis', label: 'Cantus mollis' },
                     ]"
                 />
             </UFormGroup>
