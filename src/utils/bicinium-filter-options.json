@@ -1,0 +1,12 @@
+{
+	"modes": [
+		"dorian",
+		"phrygian",
+		"mixolydian"
+	],
+	"finalis": [
+		"d",
+		"a",
+		"g"
+	]
+}
